@@ -1,0 +1,21 @@
+Inicio
+	Escribir "Ingrese el precio"
+	Leer precio
+	Escribir "Ingrese cantidad de unidades"
+	Leer unid
+	subtotal=precio*unid
+	Escribir "Su subtotal es" +subtotal
+	
+	SI(subtotal>100)
+		descuento=0.15
+		descuentototal=subtotal*descuento
+		preciofinal=subtotal-descuentototal
+		Escribir "Descuento" + descuentototal 
+		Escribir "Precio final" + preciofinal
+	SINO
+		descuento = 0
+		descuentototal = 0
+		preciofinal=subtotal-descuentototal
+		Escribir "Descuento" + descuentototal 
+		Escribir "Precio final" + preciofinal
+Fin
